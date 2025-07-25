@@ -51,59 +51,21 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-orange-400 via-orange-500 to-blue-600 text-white overflow-hidden min-h-[70vh] flex items-center">
-      {/* Enhanced Background Pattern */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Animated car elements */}
-        <div
-          className="absolute top-16 left-8 text-5xl opacity-20 animate-bounce"
-          style={{ animationDelay: "0s", animationDuration: "3s" }}
-        >
-          🚗
-        </div>
-        <div
-          className="absolute top-32 right-16 text-4xl opacity-15 animate-bounce"
-          style={{ animationDelay: "1s", animationDuration: "4s" }}
-        >
-          🚙
-        </div>
-        <div
-          className="absolute bottom-32 left-16 text-6xl opacity-25 animate-bounce"
-          style={{ animationDelay: "2s", animationDuration: "3.5s" }}
-        >
-          🚐
-        </div>
-        <div
-          className="absolute bottom-16 right-8 text-3xl opacity-20 animate-bounce"
-          style={{ animationDelay: "0.5s", animationDuration: "4.5s" }}
-        >
-          🛻
-        </div>
-        <div
-          className="absolute top-1/2 left-1/4 text-4xl opacity-10 animate-pulse"
-          style={{ animationDuration: "2s" }}
-        >
-          🏎️
-        </div>
-        <div
-          className="absolute top-1/3 right-1/3 text-5xl opacity-15 animate-pulse"
-          style={{ animationDuration: "2.5s" }}
-        >
-          🚌
-        </div>
-
-        {/* Geometric background elements */}
-        <div className="absolute top-20 right-20 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-300/10 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-300/5 rounded-full blur-3xl"></div>
+    <section className="relative bg-gradient-to-br from-orange-400 via-orange-500 to-blue-600 text-white overflow-hidden min-h-[80vh]">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 text-6xl">🚗</div>
+        <div className="absolute top-40 right-20 text-4xl">🚙</div>
+        <div className="absolute bottom-40 left-20 text-5xl">🚐</div>
+        <div className="absolute bottom-20 right-10 text-3xl">🛻</div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 relative z-10">
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Search Panel */}
           <div className="space-y-6">
-            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 h-[450px] lg:h-[500px]">
-              <CardContent className="p-6 h-full flex flex-col">
+            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 h-fit">
+              <CardContent className="p-6">
                 {/* Search Header */}
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">Find Your Perfect Car</h3>
@@ -133,45 +95,39 @@ export function HeroSection() {
                   </div>
                 </form>
 
-                {/* Body Types - Fixed height container */}
-                <div className="flex-1 flex flex-col min-h-0">
-                  <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide flex items-center mb-3">
+                {/* Body Types */}
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-gray-800 text-sm uppercase tracking-wide flex items-center">
                     <Car className="h-4 w-4 mr-2" />
                     Popular Body Types
                   </h4>
 
-                  <div className="flex-1 min-h-0">
-                    {filteredTypes.length > 0 ? (
-                      <div className="h-full overflow-y-auto space-y-2 pr-2">
-                        {filteredTypes.map((type) => (
-                          <button
-                            key={type.name}
-                            onClick={() => handleTypeClick(type.name)}
-                            className="w-full flex items-center justify-between py-3 px-4 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200 group border border-transparent hover:border-orange-200"
-                          >
-                            <div className="flex items-center space-x-3">
-                              <span className="text-2xl group-hover:scale-110 transition-transform">{type.image}</span>
-                              <div className="text-left">
-                                <div className="font-medium">{type.name}</div>
-                                <div className="text-sm text-gray-500">{type.count}</div>
-                              </div>
+                  {filteredTypes.length > 0 ? (
+                    <div className="space-y-2 max-h-80 overflow-y-auto">
+                      {filteredTypes.map((type) => (
+                        <button
+                          key={type.name}
+                          onClick={() => handleTypeClick(type.name)}
+                          className="w-full flex items-center justify-between py-3 px-4 text-gray-700 hover:bg-orange-50 hover:text-orange-700 rounded-lg transition-all duration-200 group border border-transparent hover:border-orange-200"
+                        >
+                          <div className="flex items-center space-x-3">
+                            <span className="text-2xl group-hover:scale-110 transition-transform">{type.image}</span>
+                            <div className="text-left">
+                              <div className="font-medium">{type.name}</div>
+                              <div className="text-sm text-gray-500">{type.count}</div>
                             </div>
-                            <div className="text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                              →
-                            </div>
-                          </button>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="h-full flex items-center justify-center">
-                        <div className="text-center text-gray-500">
-                          <Car className="h-12 w-12 mx-auto mb-3 opacity-50" />
-                          <p>No car types found matching "{searchQuery}"</p>
-                          <p className="text-sm mt-1">Try searching for "SUV", "Sedan", or "Hatchback"</p>
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                          </div>
+                          <div className="text-orange-500 opacity-0 group-hover:opacity-100 transition-opacity">→</div>
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="text-center py-8 text-gray-500">
+                      <Car className="h-12 w-12 mx-auto mb-3 opacity-50" />
+                      <p>No car types found matching "{searchQuery}"</p>
+                      <p className="text-sm mt-1">Try searching for "SUV", "Sedan", or "Hatchback"</p>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -248,6 +204,16 @@ export function HeroSection() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Support Banner */}
+      <div className="bg-blue-700 text-center py-3 text-sm border-t border-blue-600">
+        <div className="container mx-auto px-4">
+          Need Help? Call our support team at{" "}
+          <a href="tel:+639175478835" className="font-semibold hover:underline">
+            (917) 547 8835
+          </a>
         </div>
       </div>
     </section>
