@@ -14,12 +14,16 @@ const sampleCar = {
   bodyType: "Sedan",
   color: "White",
   description:
-    "Well-maintained Toyota Vios with excellent fuel economy. This reliable sedan has been garage-kept and serviced regularly at Casa Toyota. Perfect for daily commuting or family trips. Complete with service records and original owner's manual. Features include power steering, air conditioning, central locking, and electric windows.",
+    "Well-maintained Toyota Vios with excellent fuel economy. This reliable sedan has been garage-kept and serviced regularly at Casa Toyota. Perfect for daily commuting or family trips. Complete with service records and original owner's manual. Features include power steering, air conditioning, central locking, and electric windows. No accident history, single owner, all maintenance records available.",
   images: [
-    "/images/toyota-vios-2020.png",
-    "/images/toyota-vios-2020.png",
-    "/images/toyota-vios-2020.png",
-    "/images/toyota-vios-2020.png",
+    "/placeholder.svg?height=400&width=600&text=Toyota+Vios+Front+View",
+    "/placeholder.svg?height=400&width=600&text=Interior+Dashboard",
+    "/placeholder.svg?height=400&width=600&text=Side+Profile",
+    "/placeholder.svg?height=400&width=600&text=Interior+Seats",
+    "/placeholder.svg?height=400&width=600&text=Rear+View",
+    "/placeholder.svg?height=400&width=600&text=Engine+Bay",
+    "/placeholder.svg?height=400&width=600&text=Trunk+Space",
+    "/placeholder.svg?height=400&width=600&text=Wheels+and+Tires",
   ],
   location: "Manila, Philippines",
   seller: {
