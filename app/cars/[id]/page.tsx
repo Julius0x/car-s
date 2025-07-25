@@ -1,8 +1,6 @@
 import { CarDetailsStatic } from "@/components/cars/car-details-static"
 import { ContactFormStatic } from "@/components/cars/contact-form-static"
 
-export const dynamic = 'force-dynamic'
-
 const sampleCar = {
   id: "1",
   make: "Toyota",
@@ -16,11 +14,12 @@ const sampleCar = {
   bodyType: "Sedan",
   color: "White",
   description:
-    "Well-maintained Toyota Vios with excellent fuel economy. This reliable sedan has been garage-kept and serviced regularly at Casa Toyota. Perfect for daily commuting or family trips. Complete with service records and original owner's manual. Features include power steering, air conditioning, central locking, and electric windows. No accident history, single owner, all maintenance records available.",
+    "Well-maintained Toyota Vios with excellent fuel economy. This reliable sedan has been garage-kept and serviced regularly at Casa Toyota. Perfect for daily commuting or family trips. Complete with service records and original owner's manual. Features include power steering, air conditioning, central locking, and electric windows.",
   images: [
-    "/images/toyota-vios-front.jpg",
-    "/images/car-interior-dashboard.jpg",
-    "/images/honda-city-side.jpg",
+    "/images/toyota-vios-2020.png",
+    "/images/toyota-vios-2020.png",
+    "/images/toyota-vios-2020.png",
+    "/images/toyota-vios-2020.png",
   ],
   location: "Manila, Philippines",
   seller: {
