@@ -64,7 +64,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Search Panel */}
           <div className="space-y-6">
-            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 h-fit">
+            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0">
               <CardContent className="p-6">
                 {/* Search Header */}
                 <div className="mb-6">
@@ -103,7 +103,7 @@ export function HeroSection() {
                   </h4>
 
                   {filteredTypes.length > 0 ? (
-                    <div className="space-y-2 max-h-80 overflow-y-auto">
+                    <div className="space-y-2 max-h-64 overflow-y-auto">
                       {filteredTypes.map((type) => (
                         <button
                           key={type.name}
@@ -128,6 +128,26 @@ export function HeroSection() {
                       <p className="text-sm mt-1">Try searching for "SUV", "Sedan", or "Hatchback"</p>
                     </div>
                   )}
+                </div>
+
+                {/* Quick Actions */}
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <div className="grid grid-cols-2 gap-3">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-orange-200 text-orange-700 hover:bg-orange-50 bg-transparent"
+                    >
+                      <Link href="/cars">Browse All Cars</Link>
+                    </Button>
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="border-blue-200 text-blue-700 hover:bg-blue-50 bg-transparent"
+                    >
+                      <Link href="/sell">Sell Your Car</Link>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -213,7 +233,11 @@ export function HeroSection() {
           Need Help? Call our support team at{" "}
           <a href="tel:+639175478835" className="font-semibold hover:underline">
             (917) 547 8835
-          </a>
+          </a>{" "}
+          or{" "}
+          <Link href="/contact" className="font-semibold hover:underline">
+            contact us online
+          </Link>
         </div>
       </div>
     </section>
