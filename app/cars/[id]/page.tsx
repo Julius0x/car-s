@@ -1,6 +1,8 @@
 import { CarDetailsStatic } from "@/components/cars/car-details-static"
 import { ContactFormStatic } from "@/components/cars/contact-form-static"
 
+export const dynamic = 'force-dynamic'
+
 const sampleCar = {
   id: "1",
   make: "Toyota",
@@ -19,11 +21,6 @@ const sampleCar = {
     "/images/toyota-vios-front.jpg",
     "/images/car-interior-dashboard.jpg",
     "/images/honda-city-side.jpg",
-    "/images/car-interior-mirror.jpg",
-    "/images/red-sedan.jpg",
-    "/images/car-engine-bay.jpg",
-    "/images/van-family.jpg",
-    "/images/car-wheels-tires.jpg",
   ],
   location: "Manila, Philippines",
   seller: {
