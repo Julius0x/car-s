@@ -1,6 +1,7 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -23,29 +24,66 @@ const carMakes = [
   "Subaru",
 ]
 
-const bodyTypes = ["Sedan", "Hatchback", "SUV", "Pick-Up", "Van", "Crossover", "Coupe", "Wagon"]
+const bodyTypes = [
+  "Sedan",
+  "Hatchback",
+  "SUV",
+  "Pick-Up",
+  "Van",
+  "Crossover",
+  "Coupe",
+  "Wagon",
+  "Luxury Sedan",
+  "Luxury SUV",
+]
 
 const fuelTypes = ["Gasoline", "Diesel", "Hybrid", "Electric"]
 
 export function SearchFilters() {
+  const searchParams = useSearchParams()
   const [filters, setFilters] = useState({
     make: "",
     model: "",
     bodyType: "",
     fuelType: "",
+    search: "",
     minPrice: 300000,
     maxPrice: 3000000,
     minYear: 2010,
     maxYear: 2024,
   })
 
+  // Initialize filters from URL params
+  useEffect(() => {
+    const bodyType = searchParams.get("bodyType")
+    const search = searchParams.get("search")
+
+    if (bodyType || search) {
+      setFilters((prev) => ({
+        ...prev,
+        bodyType: bodyType || "",
+        search: search || "",
+      }))
+    }
+  }, [searchParams])
+
   const handleFilterChange = (key: string, value: any) => {
     setFilters((prev) => ({ ...prev, [key]: value }))
   }
 
   const applyFilters = () => {
-    // For demo purposes, just show an alert
-    alert("Filters applied! (Demo mode)")
+    // For demo purposes, just show an alert with applied filters
+    const activeFilters = Object.entries(filters)
+      .filter(([key, value]) => {
+        if (key === "minPrice" || key === "maxPrice" || key === "minYear" || key === "maxYear") {
+          return true // Always include range filters
+        }
+        return value !== ""
+      })
+      .map(([key, value]) => `${key}: ${value}`)
+      .join(", ")
+
+    alert(`Filters applied: ${activeFilters || "Default ranges only"} (Demo mode)`)
   }
 
   const clearFilters = () => {
@@ -54,6 +92,7 @@ export function SearchFilters() {
       model: "",
       bodyType: "",
       fuelType: "",
+      search: "",
       minPrice: 300000,
       maxPrice: 3000000,
       minYear: 2010,
@@ -80,6 +119,37 @@ export function SearchFilters() {
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
+        {/* Search Query */}
+        {filters.search && (
+          <div>
+            <Label htmlFor="search">Search Query</Label>
+            <Input
+              id="search"
+              placeholder="Search term"
+              value={filters.search}
+              onChange={(e) => handleFilterChange("search", e.target.value)}
+              className="bg-orange-50 border-orange-200"
+            />
+          </div>
+        )}
+
+        {/* Body Type - Highlighted if from URL */}
+        <div>
+          <Label htmlFor="bodyType">Body Type</Label>
+          <Select value={filters.bodyType} onValueChange={(value) => handleFilterChange("bodyType", value)}>
+            <SelectTrigger className={filters.bodyType ? "bg-orange-50 border-orange-200" : ""}>
+              <SelectValue placeholder="Select body type" />
+            </SelectTrigger>
+            <SelectContent>
+              {bodyTypes.map((type) => (
+                <SelectItem key={type} value={type}>
+                  {type}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
         <div>
           <Label htmlFor="make">Make</Label>
           <Select value={filters.make} onValueChange={(value) => handleFilterChange("make", value)}>
@@ -104,22 +174,6 @@ export function SearchFilters() {
             value={filters.model}
             onChange={(e) => handleFilterChange("model", e.target.value)}
           />
-        </div>
-
-        <div>
-          <Label htmlFor="bodyType">Body Type</Label>
-          <Select value={filters.bodyType} onValueChange={(value) => handleFilterChange("bodyType", value)}>
-            <SelectTrigger>
-              <SelectValue placeholder="Select body type" />
-            </SelectTrigger>
-            <SelectContent>
-              {bodyTypes.map((type) => (
-                <SelectItem key={type} value={type}>
-                  {type}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
         </div>
 
         <div>

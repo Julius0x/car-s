@@ -15,7 +15,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "White",
-    images: ["/images/toyota-vios-2020.png"],
+    images: ["/images/toyota-vios-front.jpg"],
     location: "Manila, Philippines",
   },
   {
@@ -30,7 +30,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "Silver",
-    images: ["/images/honda-city-2019.png"],
+    images: ["/images/honda-city-side.jpg"],
     location: "Quezon City, Philippines",
   },
   {
@@ -45,7 +45,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "SUV",
     color: "Black",
-    images: ["/images/mitsubishi-montero-sport-2021.png"],
+    images: ["/images/suv-exterior.jpg"],
     location: "Makati, Philippines",
   },
   {
@@ -60,7 +60,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "Pick-Up",
     color: "Blue",
-    images: ["/images/ford-ranger-2022.png"],
+    images: ["/images/pickup-truck.jpg"],
     location: "Cebu City, Philippines",
   },
   {
@@ -75,7 +75,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "SUV",
     color: "Red",
-    images: ["/images/hyundai-tucson-2020.png"],
+    images: ["/images/red-sedan.jpg"],
     location: "Davao City, Philippines",
   },
   {
@@ -89,8 +89,8 @@ const sampleCars = [
     transmission: "Manual",
     fuelType: "Gasoline",
     bodyType: "Hatchback",
-    color: "Yellow",
-    images: ["/images/suzuki-swift-2021.png"],
+    color: "Blue",
+    images: ["/images/hatchback-blue.jpg"],
     location: "Iloilo City, Philippines",
   },
 ]

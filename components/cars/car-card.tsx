@@ -44,6 +44,10 @@ export function CarCard({ car }: CarCardProps) {
             alt={`${car.year} ${car.make} ${car.model}`}
             fill
             className="object-cover"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement
+              target.src = "/placeholder.svg?height=200&width=300&text=Car+Image"
+            }}
           />
           <Badge className="absolute top-3 right-3 bg-orange-500 hover:bg-orange-600 text-white">{car.condition}</Badge>
         </div>
