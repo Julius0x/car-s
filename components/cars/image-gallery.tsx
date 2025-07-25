@@ -3,9 +3,9 @@
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react"
-import { ClientImage } from "@/components/ui/client-image"
 
 interface ImageGalleryProps {
   images: string[]
@@ -136,13 +136,16 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
       <div className="space-y-4">
         {/* Main Image */}
         <div className="relative aspect-video rounded-lg overflow-hidden bg-gray-100">
-          <ClientImage
+          <Image
             src={images[selectedImage] || "/placeholder.svg"}
             alt={`${carName} - Main view`}
             fill
             className="object-cover cursor-zoom-in hover:scale-105 transition-transform duration-300"
             onClick={() => openModal(selectedImage)}
-            fallbackText="Car Image"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement
+              target.src = "/placeholder.svg?height=400&width=600&text=Car+Image"
+            }}
           />
 
           {/* Image Counter */}
@@ -197,12 +200,15 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
                   }`}
                   onClick={() => setSelectedImage(index)}
                 >
-                  <ClientImage
+                  <Image
                     src={image || "/placeholder.svg"}
                     alt={`${carName} - View ${index + 1}`}
                     fill
                     className="object-cover hover:scale-110 transition-transform duration-200"
-                    fallbackText="Car View"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = "/placeholder.svg?height=150&width=200&text=Car+View"
+                    }}
                   />
                 </div>
               ))}
@@ -335,13 +341,17 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
               onMouseLeave={handleMouseUp}
               onClick={(e) => e.stopPropagation()}
             >
-              <ClientImage
+              <Image
                 src={images[selectedImage] || "/placeholder.svg?height=800&width=1200&text=Car+Image"}
                 alt={`${carName} - View ${selectedImage + 1}`}
                 width={1200}
                 height={800}
                 className="object-contain max-w-[90vw] max-h-[90vh] select-none"
-                fallbackText="Car Image"
+                draggable={false}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement
+                  target.src = "/placeholder.svg?height=800&width=1200&text=Car+Image"
+                }}
               />
             </div>
 
@@ -366,12 +376,11 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
                         resetZoom()
                       }}
                     >
-                      <ClientImage
+                      <Image
                         src={image || "/placeholder.svg"}
                         alt={`Thumbnail ${index + 1}`}
                         fill
                         className="object-cover"
-                        fallbackText=""
                       />
                     </div>
                   ))}

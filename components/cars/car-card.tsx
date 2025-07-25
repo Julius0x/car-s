@@ -1,8 +1,8 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MapPin, Calendar, Gauge, Fuel } from "lucide-react"
-import { ClientImage } from "@/components/ui/client-image"
 
 interface Car {
   id: string
@@ -39,12 +39,15 @@ export function CarCard({ car }: CarCardProps) {
     <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
       <Link href={`/cars/${car.id}`}>
         <div className="relative aspect-video">
-          <ClientImage
-            src={mainImage}
+          <Image
+            src={mainImage || "/placeholder.svg"}
             alt={`${car.year} ${car.make} ${car.model}`}
             fill
             className="object-cover"
-            fallbackText="Car Image"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement
+              target.src = "/placeholder.svg?height=200&width=300&text=Car+Image"
+            }}
           />
           <Badge className="absolute top-3 right-3 bg-orange-500 hover:bg-orange-600 text-white">{car.condition}</Badge>
         </div>

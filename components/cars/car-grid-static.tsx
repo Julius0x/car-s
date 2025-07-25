@@ -13,12 +13,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "White",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Vios+2020",
-      "/placeholder.svg?height=300&width=400&text=Interior+Dashboard",
-      "/placeholder.svg?height=300&width=400&text=Side+View",
-      "/placeholder.svg?height=300&width=400&text=Rear+View",
-    ],
+    images: ["/images/toyota-vios-front.jpg"],
     location: "Manila, Philippines",
   },
   {
@@ -33,12 +28,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "Silver",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+City+2019",
-      "/placeholder.svg?height=300&width=400&text=Interior+View",
-      "/placeholder.svg?height=300&width=400&text=Engine+Bay",
-      "/placeholder.svg?height=300&width=400&text=Trunk+Space",
-    ],
+    images: ["/images/honda-city-side.jpg"],
     location: "Quezon City, Philippines",
   },
   {
@@ -53,12 +43,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "SUV",
     color: "Black",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Mitsubishi+Montero+Sport",
-      "/placeholder.svg?height=300&width=400&text=SUV+Interior",
-      "/placeholder.svg?height=300&width=400&text=Off+Road+Capable",
-      "/placeholder.svg?height=300&width=400&text=Cargo+Space",
-    ],
+    images: ["/images/suv-exterior.jpg"],
     location: "Makati, Philippines",
   },
   {
@@ -73,12 +58,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "Pick-Up",
     color: "Blue",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Ford+Ranger+2022",
-      "/placeholder.svg?height=300&width=400&text=Pickup+Truck+Bed",
-      "/placeholder.svg?height=300&width=400&text=4x4+Capability",
-      "/placeholder.svg?height=300&width=400&text=Towing+Power",
-    ],
+    images: ["/images/pickup-truck.jpg"],
     location: "Cebu City, Philippines",
   },
   {
@@ -93,12 +73,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "SUV",
     color: "Red",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Hyundai+Tucson+2020",
-      "/placeholder.svg?height=300&width=400&text=Modern+Interior",
-      "/placeholder.svg?height=300&width=400&text=Safety+Features",
-      "/placeholder.svg?height=300&width=400&text=Fuel+Efficient",
-    ],
+    images: ["/images/red-sedan.jpg"],
     location: "Davao City, Philippines",
   },
   {
@@ -113,12 +88,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Hatchback",
     color: "Blue",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Suzuki+Swift+2021",
-      "/placeholder.svg?height=300&width=400&text=Compact+Design",
-      "/placeholder.svg?height=300&width=400&text=City+Driving",
-      "/placeholder.svg?height=300&width=400&text=Economical",
-    ],
+    images: ["/images/hatchback-blue.jpg"],
     location: "Iloilo City, Philippines",
   },
   {
@@ -133,12 +103,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "Pick-Up",
     color: "Gray",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Nissan+Navara+2020",
-      "/placeholder.svg?height=300&width=400&text=Rugged+Design",
-      "/placeholder.svg?height=300&width=400&text=Work+Ready",
-      "/placeholder.svg?height=300&width=400&text=Adventure+Ready",
-    ],
+    images: ["/images/pickup-truck.jpg"],
     location: "Baguio City, Philippines",
   },
   {
@@ -153,12 +118,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "SUV",
     color: "White",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Isuzu+mu-X+2019",
-      "/placeholder.svg?height=300&width=400&text=7+Seater+SUV",
-      "/placeholder.svg?height=300&width=400&text=Family+Vehicle",
-      "/placeholder.svg?height=300&width=400&text=Reliable+Engine",
-    ],
+    images: ["/images/suv-exterior.jpg"],
     location: "Cagayan de Oro, Philippines",
   },
   {
@@ -173,12 +133,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "SUV",
     color: "Red",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Mazda+CX-5+2021",
-      "/placeholder.svg?height=300&width=400&text=Premium+Interior",
-      "/placeholder.svg?height=300&width=400&text=SKYACTIV+Technology",
-      "/placeholder.svg?height=300&width=400&text=Sporty+Design",
-    ],
+    images: ["/images/red-sedan.jpg"],
     location: "Bacolod City, Philippines",
   },
   {
@@ -193,12 +148,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "Van",
     color: "Silver",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Innova+2020",
-      "/placeholder.svg?height=300&width=400&text=8+Seater+MPV",
-      "/placeholder.svg?height=300&width=400&text=Family+Van",
-      "/placeholder.svg?height=300&width=400&text=Spacious+Interior",
-    ],
+    images: ["/images/van-family.jpg"],
     location: "Taguig City, Philippines",
   },
   {
@@ -213,12 +163,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "SUV",
     color: "White",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+CR-V+2019",
-      "/placeholder.svg?height=300&width=400&text=Crossover+SUV",
-      "/placeholder.svg?height=300&width=400&text=Honda+SENSING",
-      "/placeholder.svg?height=300&width=400&text=Versatile+Space",
-    ],
+    images: ["/images/suv-exterior.jpg"],
     location: "Pasig City, Philippines",
   },
   {
@@ -233,12 +178,7 @@ const sampleCars = [
     fuelType: "Diesel",
     bodyType: "SUV",
     color: "Black",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Fortuner+2021",
-      "/placeholder.svg?height=300&width=400&text=Premium+SUV",
-      "/placeholder.svg?height=300&width=400&text=Off+Road+Beast",
-      "/placeholder.svg?height=300&width=400&text=Luxury+Interior",
-    ],
+    images: ["/images/suv-exterior.jpg"],
     location: "Antipolo City, Philippines",
   },
   {
@@ -253,12 +193,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "Pearl White",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Camry+2020",
-      "/placeholder.svg?height=300&width=400&text=Executive+Sedan",
-      "/placeholder.svg?height=300&width=400&text=Hybrid+Available",
-      "/placeholder.svg?height=300&width=400&text=Premium+Features",
-    ],
+    images: ["/images/luxury-sedan.jpg"],
     location: "Ortigas, Philippines",
   },
   {
@@ -273,12 +208,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "Sedan",
     color: "Blue",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+Civic+2019",
-      "/placeholder.svg?height=300&width=400&text=Sport+Sedan",
-      "/placeholder.svg?height=300&width=400&text=Turbo+Engine",
-      "/placeholder.svg?height=300&width=400&text=Modern+Tech",
-    ],
+    images: ["/images/hatchback-blue.jpg"],
     location: "Las Piñas, Philippines",
   },
   {
@@ -293,12 +223,7 @@ const sampleCars = [
     fuelType: "Gasoline",
     bodyType: "SUV",
     color: "Forest Green",
-    images: [
-      "/placeholder.svg?height=300&width=400&text=Subaru+Forester+2020",
-      "/placeholder.svg?height=300&width=400&text=All+Wheel+Drive",
-      "/placeholder.svg?height=300&width=400&text=EyeSight+Safety",
-      "/placeholder.svg?height=300&width=400&text=Adventure+Ready",
-    ],
+    images: ["/images/suv-exterior.jpg"],
     location: "Alabang, Philippines",
   },
 ]
