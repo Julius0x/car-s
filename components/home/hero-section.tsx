@@ -51,20 +51,93 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-orange-400 via-orange-500 to-blue-600 text-white overflow-hidden min-h-[80vh]">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 text-6xl">🚗</div>
-        <div className="absolute top-40 right-20 text-4xl">🚙</div>
-        <div className="absolute bottom-40 left-20 text-5xl">🚐</div>
-        <div className="absolute bottom-20 right-10 text-3xl">🛻</div>
+    <section className="relative bg-gradient-to-br from-orange-400 via-orange-500 to-blue-600 text-white overflow-hidden min-h-[70vh] flex items-center">
+      {/* Enhanced Background Pattern */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Animated car elements - adding more cars with lower opacity */}
+        <div
+          className="absolute top-16 left-8 text-5xl opacity-10 animate-bounce"
+          style={{ animationDelay: "0s", animationDuration: "3s" }}
+        >
+          🚗
+        </div>
+        <div
+          className="absolute top-32 right-16 text-4xl opacity-10 animate-bounce"
+          style={{ animationDelay: "1s", animationDuration: "4s" }}
+        >
+          🚙
+        </div>
+        <div
+          className="absolute bottom-32 left-16 text-6xl opacity-15 animate-bounce"
+          style={{ animationDelay: "2s", animationDuration: "3.5s" }}
+        >
+          🚐
+        </div>
+        <div
+          className="absolute bottom-16 right-8 text-3xl opacity-10 animate-bounce"
+          style={{ animationDelay: "0.5s", animationDuration: "4.5s" }}
+        >
+          🛻
+        </div>
+        <div className="absolute top-1/2 left-1/4 text-4xl opacity-5 animate-pulse" style={{ animationDuration: "2s" }}>
+          🏎️
+        </div>
+        <div
+          className="absolute top-1/3 right-1/3 text-5xl opacity-10 animate-pulse"
+          style={{ animationDuration: "2.5s" }}
+        >
+          🚌
+        </div>
+
+        {/* Adding more car elements to fill the background */}
+        <div
+          className="absolute top-1/4 left-1/3 text-5xl opacity-8 animate-bounce"
+          style={{ animationDelay: "1.5s", animationDuration: "3.2s" }}
+        >
+          🚗
+        </div>
+        <div
+          className="absolute bottom-1/4 right-1/4 text-4xl opacity-7 animate-bounce"
+          style={{ animationDelay: "0.7s", animationDuration: "3.8s" }}
+        >
+          🚙
+        </div>
+        <div
+          className="absolute top-2/3 left-2/3 text-5xl opacity-9 animate-pulse"
+          style={{ animationDuration: "2.7s" }}
+        >
+          🚘
+        </div>
+        <div
+          className="absolute top-10 right-1/4 text-6xl opacity-6 animate-bounce"
+          style={{ animationDelay: "2.2s", animationDuration: "4.2s" }}
+        >
+          🚕
+        </div>
+        <div
+          className="absolute bottom-20 left-1/2 text-4xl opacity-8 animate-pulse"
+          style={{ animationDuration: "3.1s" }}
+        >
+          🚓
+        </div>
+        <div
+          className="absolute top-1/2 right-20 text-5xl opacity-7 animate-bounce"
+          style={{ animationDelay: "1.8s", animationDuration: "3.7s" }}
+        >
+          🚑
+        </div>
+
+        {/* Geometric background elements with reduced opacity */}
+        <div className="absolute top-20 right-20 w-32 h-32 bg-white/3 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-300/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-300/3 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Search Panel */}
           <div className="space-y-6">
-            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 h-[500px]">
+            <Card className="bg-white/95 backdrop-blur-sm shadow-2xl border-0 h-[450px] lg:h-[500px]">
               <CardContent className="p-6 h-full flex flex-col">
                 {/* Search Header */}
                 <div className="mb-6">

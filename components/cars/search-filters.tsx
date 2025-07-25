@@ -52,20 +52,28 @@ export function SearchFilters() {
     minYear: 2010,
     maxYear: 2024,
   })
+  const [isInitialized, setIsInitialized] = useState(false)
 
-  // Initialize filters from URL params
+  // Initialize filters from URL params only once
   useEffect(() => {
-    const bodyType = searchParams.get("bodyType")
-    const search = searchParams.get("search")
+    if (!isInitialized) {
+      const bodyType = searchParams.get("bodyType") || ""
+      const search = searchParams.get("search") || ""
+      const make = searchParams.get("make") || ""
+      const model = searchParams.get("model") || ""
+      const fuelType = searchParams.get("fuelType") || ""
 
-    if (bodyType || search) {
       setFilters((prev) => ({
         ...prev,
-        bodyType: bodyType || "",
-        search: search || "",
+        bodyType,
+        search,
+        make,
+        model,
+        fuelType,
       }))
+      setIsInitialized(true)
     }
-  }, [searchParams])
+  }, [searchParams, isInitialized])
 
   const handleFilterChange = (key: string, value: any) => {
     setFilters((prev) => ({ ...prev, [key]: value }))
@@ -108,6 +116,28 @@ export function SearchFilters() {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     }).format(price)
+  }
+
+  // Don't render until initialized to prevent hydration issues
+  if (!isInitialized) {
+    return (
+      <Card className="sticky top-24">
+        <CardHeader>
+          <CardTitle className="flex items-center text-lg">
+            <span className="mr-2">🔍</span>
+            Filter Cars
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="animate-pulse space-y-4">
+            <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+            <div className="h-10 bg-gray-200 rounded"></div>
+            <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+            <div className="h-10 bg-gray-200 rounded"></div>
+          </div>
+        </CardContent>
+      </Card>
+    )
   }
 
   return (
