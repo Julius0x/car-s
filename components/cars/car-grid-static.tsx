@@ -16,8 +16,10 @@ const sampleCars = [
     images: [
       "/images/toyota-vios-front.jpg",
       "/images/car-interior-dashboard.jpg",
-      "/images/white-luxury-car.jpg", // Using a generic image for side view
-      "/images/red-sedan.jpg", // Using a generic image for rear view
+      "/images/honda-city-side.jpg", 
+      "/images/red-sedan.jpg", 
+      "/images/car-engine-bay.jpg",
+      "/images/car-wheels-tires.jpg",
     ],
     location: "Manila, Philippines",
   },
@@ -35,9 +37,9 @@ const sampleCars = [
     color: "Silver",
     images: [
       "/images/honda-city-side.jpg",
-      "/images/car-interior-mirror.jpg", // Using a generic image for interior
+      "/images/car-interior-mirror.jpg", 
       "/images/car-engine-bay.jpg",
-      "/images/placeholder.jpg", // Using a generic placeholder for trunk
+      "/images/toyota-vios-front.jpg",
     ],
     location: "Quezon City, Philippines",
   },
@@ -55,9 +57,9 @@ const sampleCars = [
     color: "Black",
     images: [
       "/images/suv-exterior.jpg",
-      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
-      "/images/car-lot-aerial.jpg", // Using a generic image for off-road capable
-      "/images/placeholder.jpg", // Using a generic placeholder for cargo space
+      "/images/car-interior-dashboard.jpg", 
+      "/images/car-lot-aerial.jpg", 
+      "/images/pickup-truck.jpg",
     ],
     location: "Makati, Philippines",
   },
@@ -75,9 +77,9 @@ const sampleCars = [
     color: "Blue",
     images: [
       "/images/pickup-truck.jpg",
-      "/images/placeholder.jpg", // Using a generic placeholder for truck bed
-      "/images/car-lot-aerial.jpg", // Using a generic image for 4x4
-      "/images/placeholder.jpg", // Using a generic placeholder for towing
+      "/images/car-wheels-tires.jpg",
+      "/images/car-lot-aerial.jpg", 
+      "/images/dealership-keys.jpg",
     ],
     location: "Cebu City, Philippines",
   },
@@ -94,10 +96,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Red",
     images: [
-      "/images/red-sedan.jpg", // Using a generic image for the car
-      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
-      "/images/placeholder.jpg", // Using a generic placeholder for safety features
-      "/images/placeholder.jpg", // Using a generic placeholder for fuel efficient
+      "/images/red-sedan.jpg", 
+      "/images/car-interior-dashboard.jpg", 
+      "/images/classic-cars-showroom.jpg",
+      "/images/dealership-keys.jpg",
     ],
     location: "Davao City, Philippines",
   },
@@ -115,9 +117,9 @@ const sampleCars = [
     color: "Blue",
     images: [
       "/images/hatchback-blue.jpg",
-      "/images/placeholder.jpg", // Using a generic placeholder for compact design
-      "/images/car-lot-aerial.jpg", // Using a generic image for city driving
-      "/images/placeholder.jpg", // Using a generic placeholder for economical
+      "/images/car-dashboard.jpg",
+      "/images/car-lot-aerial.jpg", 
+      "/images/dealership-keys.jpg",
     ],
     location: "Iloilo City, Philippines",
   },
@@ -134,10 +136,10 @@ const sampleCars = [
     bodyType: "Pick-Up",
     color: "Gray",
     images: [
-      "/images/pickup-truck.jpg", // Using a generic image for the car
-      "/images/car-lot-aerial.jpg", // Using a generic image for rugged design
-      "/images/placeholder.jpg", // Using a generic placeholder for work ready
-      "/images/placeholder.jpg", // Using a generic placeholder for adventure ready
+      "/images/pickup-truck.jpg", 
+      "/images/car-lot-aerial.jpg", 
+      "/images/dealership-keys.jpg",
+      "/images/car-handover.jpg",
     ],
     location: "Baguio City, Philippines",
   },
@@ -154,10 +156,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "White",
     images: [
-      "/images/suv-exterior.jpg", // Using a generic image for the car
-      "/images/placeholder.jpg", // Using a generic placeholder for 7 seater
-      "/images/van-family.jpg", // Using a generic image for family vehicle
-      "/images/car-engine-bay.jpg", // Using a generic image for engine
+      "/images/suv-exterior.jpg", 
+      "/images/van-family.jpg", 
+      "/images/car-engine-bay.jpg",
+      "/images/car-handover.jpg",
     ],
     location: "Cagayan de Oro, Philippines",
   },
@@ -174,10 +176,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Red",
     images: [
-      "/images/suv-exterior.jpg", // Using a generic image for the car
-      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
-      "/images/placeholder.jpg", // Using a generic placeholder for SKYACTIV
-      "/images/red-sedan.jpg", // Using a generic image for sporty design
+      "/images/suv-exterior.jpg", 
+      "/images/car-interior-dashboard.jpg", 
+      "/images/white-luxury-car.jpg",
+      "/images/red-sedan.jpg", 
     ],
     location: "Bacolod City, Philippines",
   },
@@ -195,9 +197,9 @@ const sampleCars = [
     color: "Silver",
     images: [
       "/images/van-family.jpg",
-      "/images/placeholder.jpg", // Using a generic placeholder for 8 seater
-      "/images/van-family.jpg", // Using a generic image for family van
-      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
+      "/images/car-interior-dashboard.jpg",
+      "/images/dealership-keys.jpg",
+      "/images/car-handover.jpg",
     ],
     location: "Taguig City, Philippines",
   },
@@ -214,10 +216,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "White",
     images: [
-      "/images/suv-exterior.jpg", // Using a generic image for the car
-      "/images/placeholder.jpg", // Using a generic placeholder for crossover
-      "/images/placeholder.jpg", // Using a generic placeholder for Honda SENSING
-      "/images/placeholder.jpg", // Using a generic placeholder for versatile space
+      "/images/suv-exterior.jpg", 
+      "/images/car-dashboard.jpg",
+      "/images/car-lot-aerial.jpg",
+      "/images/dealership-keys.jpg",
     ],
     location: "Pasig City, Philippines",
   },
@@ -234,10 +236,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Black",
     images: [
-      "/images/suv-exterior.jpg", // Using a generic image for the car
-      "/images/placeholder.jpg", // Using a generic placeholder for premium SUV
-      "/images/car-lot-aerial.jpg", // Using a generic image for off-road beast
-      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
+      "/images/suv-exterior.jpg", 
+      "/images/car-lot-aerial.jpg", 
+      "/images/car-interior-dashboard.jpg", 
+      "/images/car-handover.jpg",
     ],
     location: "Antipolo City, Philippines",
   },
@@ -255,9 +257,9 @@ const sampleCars = [
     color: "Pearl White",
     images: [
       "/images/white-luxury-car.jpg",
-      "/images/car-interior-dashboard.jpg", // Using a generic image for executive sedan
-      "/images/placeholder.jpg", // Using a generic placeholder for hybrid
-      "/images/placeholder.jpg", // Using a generic placeholder for premium features
+      "/images/car-interior-dashboard.jpg", 
+      "/images/classic-cars-showroom.jpg",
+      "/images/dealership-keys.jpg",
     ],
     location: "Ortigas, Philippines",
   },
@@ -274,10 +276,10 @@ const sampleCars = [
     bodyType: "Sedan",
     color: "Blue",
     images: [
-      "/images/hatchback-blue.jpg", // Using a generic image for the car
-      "/images/red-sedan.jpg", // Using a generic image for sport sedan
-      "/images/car-engine-bay.jpg", // Using a generic image for turbo engine
-      "/images/car-interior-dashboard.jpg", // Using a generic image for modern tech
+      "/images/hatchback-blue.jpg", 
+      "/images/red-sedan.jpg", 
+      "/images/car-engine-bay.jpg", 
+      "/images/car-interior-dashboard.jpg", 
     ],
     location: "Las Piñas, Philippines",
   },
@@ -294,10 +296,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Forest Green",
     images: [
-      "/images/suv-exterior.jpg", // Using a generic image for the car
-      "/images/car-lot-aerial.jpg", // Using a generic image for AWD
-      "/images/placeholder.jpg", // Using a generic placeholder for EyeSight
-      "/images/placeholder.jpg", // Using a generic placeholder for adventure ready
+      "/images/suv-exterior.jpg", 
+      "/images/car-lot-aerial.jpg", 
+      "/images/dealership-keys.jpg",
+      "/images/car-handover.jpg",
     ],
     location: "Alabang, Philippines",
   },
