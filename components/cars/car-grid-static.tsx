@@ -14,10 +14,10 @@ const sampleCars = [
     bodyType: "Sedan",
     color: "White",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Vios+2020",
-      "/placeholder.svg?height=300&width=400&text=Interior+Dashboard",
-      "/placeholder.svg?height=300&width=400&text=Side+View",
-      "/placeholder.svg?height=300&width=400&text=Rear+View",
+      "/images/toyota-vios-front.jpg",
+      "/images/car-interior-dashboard.jpg",
+      "/images/white-luxury-car.jpg", // Using a generic image for side view
+      "/images/red-sedan.jpg", // Using a generic image for rear view
     ],
     location: "Manila, Philippines",
   },
@@ -34,10 +34,10 @@ const sampleCars = [
     bodyType: "Sedan",
     color: "Silver",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+City+2019",
-      "/placeholder.svg?height=300&width=400&text=Interior+View",
-      "/placeholder.svg?height=300&width=400&text=Engine+Bay",
-      "/placeholder.svg?height=300&width=400&text=Trunk+Space",
+      "/images/honda-city-side.jpg",
+      "/images/car-interior-mirror.jpg", // Using a generic image for interior
+      "/images/car-engine-bay.jpg",
+      "/images/placeholder.jpg", // Using a generic placeholder for trunk
     ],
     location: "Quezon City, Philippines",
   },
@@ -54,10 +54,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Black",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Mitsubishi+Montero+Sport",
-      "/placeholder.svg?height=300&width=400&text=SUV+Interior",
-      "/placeholder.svg?height=300&width=400&text=Off+Road+Capable",
-      "/placeholder.svg?height=300&width=400&text=Cargo+Space",
+      "/images/suv-exterior.jpg",
+      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
+      "/images/car-lot-aerial.jpg", // Using a generic image for off-road capable
+      "/images/placeholder.jpg", // Using a generic placeholder for cargo space
     ],
     location: "Makati, Philippines",
   },
@@ -74,10 +74,10 @@ const sampleCars = [
     bodyType: "Pick-Up",
     color: "Blue",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Ford+Ranger+2022",
-      "/placeholder.svg?height=300&width=400&text=Pickup+Truck+Bed",
-      "/placeholder.svg?height=300&width=400&text=4x4+Capability",
-      "/placeholder.svg?height=300&width=400&text=Towing+Power",
+      "/images/pickup-truck.jpg",
+      "/images/placeholder.jpg", // Using a generic placeholder for truck bed
+      "/images/car-lot-aerial.jpg", // Using a generic image for 4x4
+      "/images/placeholder.jpg", // Using a generic placeholder for towing
     ],
     location: "Cebu City, Philippines",
   },
@@ -94,10 +94,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Red",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Hyundai+Tucson+2020",
-      "/placeholder.svg?height=300&width=400&text=Modern+Interior",
-      "/placeholder.svg?height=300&width=400&text=Safety+Features",
-      "/placeholder.svg?height=300&width=400&text=Fuel+Efficient",
+      "/images/red-sedan.jpg", // Using a generic image for the car
+      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
+      "/images/placeholder.jpg", // Using a generic placeholder for safety features
+      "/images/placeholder.jpg", // Using a generic placeholder for fuel efficient
     ],
     location: "Davao City, Philippines",
   },
@@ -114,10 +114,10 @@ const sampleCars = [
     bodyType: "Hatchback",
     color: "Blue",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Suzuki+Swift+2021",
-      "/placeholder.svg?height=300&width=400&text=Compact+Design",
-      "/placeholder.svg?height=300&width=400&text=City+Driving",
-      "/placeholder.svg?height=300&width=400&text=Economical",
+      "/images/hatchback-blue.jpg",
+      "/images/placeholder.jpg", // Using a generic placeholder for compact design
+      "/images/car-lot-aerial.jpg", // Using a generic image for city driving
+      "/images/placeholder.jpg", // Using a generic placeholder for economical
     ],
     location: "Iloilo City, Philippines",
   },
@@ -134,10 +134,10 @@ const sampleCars = [
     bodyType: "Pick-Up",
     color: "Gray",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Nissan+Navara+2020",
-      "/placeholder.svg?height=300&width=400&text=Rugged+Design",
-      "/placeholder.svg?height=300&width=400&text=Work+Ready",
-      "/placeholder.svg?height=300&width=400&text=Adventure+Ready",
+      "/images/pickup-truck.jpg", // Using a generic image for the car
+      "/images/car-lot-aerial.jpg", // Using a generic image for rugged design
+      "/images/placeholder.jpg", // Using a generic placeholder for work ready
+      "/images/placeholder.jpg", // Using a generic placeholder for adventure ready
     ],
     location: "Baguio City, Philippines",
   },
@@ -154,10 +154,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "White",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Isuzu+mu-X+2019",
-      "/placeholder.svg?height=300&width=400&text=7+Seater+SUV",
-      "/placeholder.svg?height=300&width=400&text=Family+Vehicle",
-      "/placeholder.svg?height=300&width=400&text=Reliable+Engine",
+      "/images/suv-exterior.jpg", // Using a generic image for the car
+      "/images/placeholder.jpg", // Using a generic placeholder for 7 seater
+      "/images/van-family.jpg", // Using a generic image for family vehicle
+      "/images/car-engine-bay.jpg", // Using a generic image for engine
     ],
     location: "Cagayan de Oro, Philippines",
   },
@@ -174,10 +174,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Red",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Mazda+CX-5+2021",
-      "/placeholder.svg?height=300&width=400&text=Premium+Interior",
-      "/placeholder.svg?height=300&width=400&text=SKYACTIV+Technology",
-      "/placeholder.svg?height=300&width=400&text=Sporty+Design",
+      "/images/suv-exterior.jpg", // Using a generic image for the car
+      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
+      "/images/placeholder.jpg", // Using a generic placeholder for SKYACTIV
+      "/images/red-sedan.jpg", // Using a generic image for sporty design
     ],
     location: "Bacolod City, Philippines",
   },
@@ -194,10 +194,10 @@ const sampleCars = [
     bodyType: "Van",
     color: "Silver",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Innova+2020",
-      "/placeholder.svg?height=300&width=400&text=8+Seater+MPV",
-      "/placeholder.svg?height=300&width=400&text=Family+Van",
-      "/placeholder.svg?height=300&width=400&text=Spacious+Interior",
+      "/images/van-family.jpg",
+      "/images/placeholder.jpg", // Using a generic placeholder for 8 seater
+      "/images/van-family.jpg", // Using a generic image for family van
+      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
     ],
     location: "Taguig City, Philippines",
   },
@@ -214,10 +214,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "White",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+CR-V+2019",
-      "/placeholder.svg?height=300&width=400&text=Crossover+SUV",
-      "/placeholder.svg?height=300&width=400&text=Honda+SENSING",
-      "/placeholder.svg?height=300&width=400&text=Versatile+Space",
+      "/images/suv-exterior.jpg", // Using a generic image for the car
+      "/images/placeholder.jpg", // Using a generic placeholder for crossover
+      "/images/placeholder.jpg", // Using a generic placeholder for Honda SENSING
+      "/images/placeholder.jpg", // Using a generic placeholder for versatile space
     ],
     location: "Pasig City, Philippines",
   },
@@ -234,10 +234,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Black",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Fortuner+2021",
-      "/placeholder.svg?height=300&width=400&text=Premium+SUV",
-      "/placeholder.svg?height=300&width=400&text=Off+Road+Beast",
-      "/placeholder.svg?height=300&width=400&text=Luxury+Interior",
+      "/images/suv-exterior.jpg", // Using a generic image for the car
+      "/images/placeholder.jpg", // Using a generic placeholder for premium SUV
+      "/images/car-lot-aerial.jpg", // Using a generic image for off-road beast
+      "/images/car-interior-dashboard.jpg", // Using a generic image for interior
     ],
     location: "Antipolo City, Philippines",
   },
@@ -254,10 +254,10 @@ const sampleCars = [
     bodyType: "Sedan",
     color: "Pearl White",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Toyota+Camry+2020",
-      "/placeholder.svg?height=300&width=400&text=Executive+Sedan",
-      "/placeholder.svg?height=300&width=400&text=Hybrid+Available",
-      "/placeholder.svg?height=300&width=400&text=Premium+Features",
+      "/images/white-luxury-car.jpg",
+      "/images/car-interior-dashboard.jpg", // Using a generic image for executive sedan
+      "/images/placeholder.jpg", // Using a generic placeholder for hybrid
+      "/images/placeholder.jpg", // Using a generic placeholder for premium features
     ],
     location: "Ortigas, Philippines",
   },
@@ -274,10 +274,10 @@ const sampleCars = [
     bodyType: "Sedan",
     color: "Blue",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Honda+Civic+2019",
-      "/placeholder.svg?height=300&width=400&text=Sport+Sedan",
-      "/placeholder.svg?height=300&width=400&text=Turbo+Engine",
-      "/placeholder.svg?height=300&width=400&text=Modern+Tech",
+      "/images/hatchback-blue.jpg", // Using a generic image for the car
+      "/images/red-sedan.jpg", // Using a generic image for sport sedan
+      "/images/car-engine-bay.jpg", // Using a generic image for turbo engine
+      "/images/car-interior-dashboard.jpg", // Using a generic image for modern tech
     ],
     location: "Las Piñas, Philippines",
   },
@@ -294,10 +294,10 @@ const sampleCars = [
     bodyType: "SUV",
     color: "Forest Green",
     images: [
-      "/placeholder.svg?height=300&width=400&text=Subaru+Forester+2020",
-      "/placeholder.svg?height=300&width=400&text=All+Wheel+Drive",
-      "/placeholder.svg?height=300&width=400&text=EyeSight+Safety",
-      "/placeholder.svg?height=300&width=400&text=Adventure+Ready",
+      "/images/suv-exterior.jpg", // Using a generic image for the car
+      "/images/car-lot-aerial.jpg", // Using a generic image for AWD
+      "/images/placeholder.jpg", // Using a generic placeholder for EyeSight
+      "/images/placeholder.jpg", // Using a generic placeholder for adventure ready
     ],
     location: "Alabang, Philippines",
   },
