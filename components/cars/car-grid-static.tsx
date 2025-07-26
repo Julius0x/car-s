@@ -20,6 +20,8 @@ const sampleCars = [
       "/images/red-sedan.jpg", 
       "/images/car-engine-bay.jpg",
       "/images/car-wheels-tires.jpg",
+      "/images/car-handover.jpg",
+      "/images/dealership-keys.jpg"
     ],
     location: "Manila, Philippines",
   },
@@ -40,6 +42,8 @@ const sampleCars = [
       "/images/car-interior-mirror.jpg", 
       "/images/car-engine-bay.jpg",
       "/images/toyota-vios-front.jpg",
+      "/images/car-dashboard.jpg",
+      "/images/classic-cars-showroom.jpg"
     ],
     location: "Quezon City, Philippines",
   },
@@ -60,6 +64,8 @@ const sampleCars = [
       "/images/car-interior-dashboard.jpg", 
       "/images/car-lot-aerial.jpg", 
       "/images/pickup-truck.jpg",
+      "/images/white-luxury-car.jpg",
+      "/images/van-family.jpg"
     ],
     location: "Makati, Philippines",
   },
@@ -80,6 +86,8 @@ const sampleCars = [
       "/images/car-wheels-tires.jpg",
       "/images/car-lot-aerial.jpg", 
       "/images/dealership-keys.jpg",
+      "/images/car-handover.jpg",
+      "/images/classic-cars-showroom.jpg"
     ],
     location: "Cebu City, Philippines",
   },
@@ -100,6 +108,8 @@ const sampleCars = [
       "/images/car-interior-dashboard.jpg", 
       "/images/classic-cars-showroom.jpg",
       "/images/dealership-keys.jpg",
+      "/images/suv-exterior.jpg",
+      "/images/hatchback-blue.jpg"
     ],
     location: "Davao City, Philippines",
   },
@@ -120,6 +130,8 @@ const sampleCars = [
       "/images/car-dashboard.jpg",
       "/images/car-lot-aerial.jpg", 
       "/images/dealership-keys.jpg",
+      "/images/toyota-vios-front.jpg",
+      "/images/honda-city-side.jpg"
     ],
     location: "Iloilo City, Philippines",
   },
@@ -140,6 +152,8 @@ const sampleCars = [
       "/images/car-lot-aerial.jpg", 
       "/images/dealership-keys.jpg",
       "/images/car-handover.jpg",
+      "/images/suv-exterior.jpg",
+      "/images/van-family.jpg"
     ],
     location: "Baguio City, Philippines",
   },
@@ -160,6 +174,8 @@ const sampleCars = [
       "/images/van-family.jpg", 
       "/images/car-engine-bay.jpg",
       "/images/car-handover.jpg",
+      "/images/classic-cars-showroom.jpg",
+      "/images/dealership-keys.jpg"
     ],
     location: "Cagayan de Oro, Philippines",
   },
@@ -179,7 +195,9 @@ const sampleCars = [
       "/images/suv-exterior.jpg", 
       "/images/car-interior-dashboard.jpg", 
       "/images/white-luxury-car.jpg",
-      "/images/red-sedan.jpg", 
+      "/images/red-sedan.jpg",
+      "/images/car-lot-aerial.jpg",
+      "/images/dealership-keys.jpg"
     ],
     location: "Bacolod City, Philippines",
   },
@@ -200,6 +218,8 @@ const sampleCars = [
       "/images/car-interior-dashboard.jpg",
       "/images/dealership-keys.jpg",
       "/images/car-handover.jpg",
+      "/images/suv-exterior.jpg",
+      "/images/pickup-truck.jpg"
     ],
     location: "Taguig City, Philippines",
   },
@@ -220,6 +240,8 @@ const sampleCars = [
       "/images/car-dashboard.jpg",
       "/images/car-lot-aerial.jpg",
       "/images/dealership-keys.jpg",
+      "/images/white-luxury-car.jpg",
+      "/images/red-sedan.jpg"
     ],
     location: "Pasig City, Philippines",
   },
@@ -240,6 +262,8 @@ const sampleCars = [
       "/images/car-lot-aerial.jpg", 
       "/images/car-interior-dashboard.jpg", 
       "/images/car-handover.jpg",
+      "/images/pickup-truck.jpg",
+      "/images/van-family.jpg"
     ],
     location: "Antipolo City, Philippines",
   },
@@ -260,6 +284,8 @@ const sampleCars = [
       "/images/car-interior-dashboard.jpg", 
       "/images/classic-cars-showroom.jpg",
       "/images/dealership-keys.jpg",
+      "/images/toyota-vios-front.jpg",
+      "/images/honda-city-side.jpg"
     ],
     location: "Ortigas, Philippines",
   },
@@ -279,7 +305,9 @@ const sampleCars = [
       "/images/hatchback-blue.jpg", 
       "/images/red-sedan.jpg", 
       "/images/car-engine-bay.jpg", 
-      "/images/car-interior-dashboard.jpg", 
+      "/images/car-interior-dashboard.jpg",
+      "/images/toyota-vios-front.jpg",
+      "/images/honda-city-side.jpg"
     ],
     location: "Las Piñas, Philippines",
   },
@@ -300,6 +328,8 @@ const sampleCars = [
       "/images/car-lot-aerial.jpg", 
       "/images/dealership-keys.jpg",
       "/images/car-handover.jpg",
+      "/images/white-luxury-car.jpg",
+      "/images/red-sedan.jpg"
     ],
     location: "Alabang, Philippines",
   },
