@@ -70,6 +70,7 @@ export function ClientImage({
         </div>
       )}
       <Image
+        key={src} // Add key prop
         src={src || "/placeholder.svg"}
         alt={alt}
         width={width}
