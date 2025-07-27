@@ -23,7 +23,10 @@ interface CarCardProps {
 }
 
 export function CarCard({ car }: CarCardProps) {
-  const mainImage = car.images[0] || "/placeholder.svg?height=200&width=300"
+  // Use a placeholder image if no images are provided or construct the image path
+  const mainImage = car.images && car.images.length > 0 
+    ? `/images/${car.images[0]}` // Assuming images array contains filenames like 'red-sedan.jpg'
+    : "/placeholder.svg?height=200&width=300";
 
   // Format price in Philippine Peso
   const formatPrice = (price: number) => {
