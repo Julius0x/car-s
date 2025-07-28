@@ -17,7 +17,9 @@ export const metadata: Metadata = {
     description: "Find your perfect pre-owned vehicle or sell your car on the Philippines' leading car marketplace",
     type: "website",
   },
-    generator: 'v0.dev'
+  icons: {
+    icon: '/logo.png',
+  },
 }
 
 export default function RootLayout({
@@ -26,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.className}>
+      <body>
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Navbar />

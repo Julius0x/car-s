@@ -43,13 +43,14 @@ export function CarCard({ car }: CarCardProps) {
   return (
     <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
       <Link href={`/cars/${car.id}`}>
-        <div className="relative aspect-video">
+        <div className="relative aspect-video min-h-48">
           <ClientImage
             src={mainImage}
             alt={`${car.year} ${car.make} ${car.model}`}
             fill
             className="object-cover"
             fallbackText="Car Image"
+            priority={true}
           />
           <Badge className="absolute top-3 right-3 bg-orange-500 hover:bg-orange-600 text-white">{car.condition}</Badge>
         </div>

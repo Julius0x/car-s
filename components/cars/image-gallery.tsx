@@ -143,6 +143,7 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
             className="object-cover cursor-zoom-in hover:scale-105 transition-transform duration-300"
             onClick={() => openModal(selectedImage)}
             fallbackText="Car Image"
+            priority={true}
           />
 
           {/* Image Counter */}

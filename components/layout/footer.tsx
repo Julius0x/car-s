@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-orange-400 to-blue-600 text-white font-bold text-xl px-3 py-1 rounded">
-                Dryve
-              </div>
+              <Image className="w-16 h-16" src="/logo.png" alt="Dryve Logo" width={64} height={64} /> {/* Adjust width and height as needed */}
             </Link>
             <p className="text-sm text-muted-foreground">
               The Philippines' most trusted pre-owned vehicle marketplace. It's Easy. Just Dryve!
@@ -81,6 +80,7 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+          {/* Kept "Dryve Philippines" as it seems like the full brand name */}
           <p>&copy; 2024 Dryve Philippines. All rights reserved.</p>
         </div>
       </div>

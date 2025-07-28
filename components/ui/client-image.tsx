@@ -57,7 +57,7 @@ export function ClientImage({
   }
 
   return (
-    <div className="relative">
+    <div className="relative h-full w-full">
       {isLoading && (
         <div
           className={`absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ${className} z-10`}

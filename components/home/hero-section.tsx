@@ -16,7 +16,7 @@ const bodyTypes = [
   { name: "Van", count: "80+ cars", image: "🚌" },
   { name: "Luxury Sedan", count: "45+ cars", image: "🏎️" },
   { name: "Luxury SUV", count: "35+ cars", image: "🚗" },
-  { name: "Pick-Up", count: "120+ cars", image: "🛻" },
+  { name: "Pick-Up", count: "120+ cars", image: "🚗" },
 ]
 
 export function HeroSection() {
@@ -52,52 +52,6 @@ export function HeroSection() {
 
   return (
     <section className="relative bg-gradient-to-br from-orange-400 via-orange-500 to-blue-600 text-white overflow-hidden min-h-[70vh] flex items-center">
-      {/* Enhanced Background Pattern */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Animated car elements */}
-        <div
-          className="absolute top-16 left-8 text-5xl opacity-20 animate-bounce"
-          style={{ animationDelay: "0s", animationDuration: "3s" }}
-        >
-          🚗
-        </div>
-        <div
-          className="absolute top-32 right-16 text-4xl opacity-15 animate-bounce"
-          style={{ animationDelay: "1s", animationDuration: "4s" }}
-        >
-          🚙
-        </div>
-        <div
-          className="absolute bottom-32 left-16 text-6xl opacity-25 animate-bounce"
-          style={{ animationDelay: "2s", animationDuration: "3.5s" }}
-        >
-          🚐
-        </div>
-        <div
-          className="absolute bottom-16 right-8 text-3xl opacity-20 animate-bounce"
-          style={{ animationDelay: "0.5s", animationDuration: "4.5s" }}
-        >
-          🛻
-        </div>
-        <div
-          className="absolute top-1/2 left-1/4 text-4xl opacity-10 animate-pulse"
-          style={{ animationDuration: "2s" }}
-        >
-          🏎️
-        </div>
-        <div
-          className="absolute top-1/3 right-1/3 text-5xl opacity-15 animate-pulse"
-          style={{ animationDuration: "2.5s" }}
-        >
-          🚌
-        </div>
-
-        {/* Geometric background elements */}
-        <div className="absolute top-20 right-20 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-300/10 rounded-full blur-2xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-orange-300/5 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Search Panel */}
@@ -116,7 +70,7 @@ export function HeroSection() {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input
                       type="text"
-                      placeholder="Search for Toyota, Honda, SUV, Sedan..."
+                      placeholder="Search for cars"
                       value={searchQuery}
                       onChange={(e) => handleSearch(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none text-gray-700 text-lg"
