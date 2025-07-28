@@ -218,7 +218,7 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
 
         {/* View Labels - Simplified to prevent overflow */}
         <div className="flex flex-wrap gap-2 text-sm text-gray-600 max-w-full">
-          {images.slice(0, 6).map((_, index) => (
+          {images.map((_, index) => (
             <span
               key={index}
               className={`px-2 py-1 rounded-full cursor-pointer transition-colors flex-shrink-0 ${
@@ -229,11 +229,6 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
               {getImageLabel(index)}
             </span>
           ))}
-          {images.length > 6 && (
-            <span className="px-2 py-1 rounded-full bg-gray-100 text-gray-500 flex-shrink-0">
-              +{images.length - 6} more
-            </span>
-          )}
         </div>
       </div>
 
