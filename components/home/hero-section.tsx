@@ -70,7 +70,7 @@ export function HeroSection() {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                     <input
                       type="text"
-                      placeholder="Search for cars"
+                      placeholder="Search for car types"
                       value={searchQuery}
                       onChange={(e) => handleSearch(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none text-gray-700 text-lg"
@@ -144,7 +144,7 @@ export function HeroSection() {
               <p className="text-xl lg:text-2xl opacity-90 mb-8 leading-relaxed">
                 Your trusted partner for pre-owned vehicle journey.
                 <br />
-                <span className="text-lg opacity-75">Find quality cars from verified sellers nationwide.</span>
+                {/* <span className="text-lg opacity-75">Find quality cars from verified sellers nationwide.</span> */}
               </p>
             </div>
 

@@ -7,7 +7,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Rotate3dIcon as RotateIcon } from "lucide-react"
-import { EnhancedVirtualTour } from "./enhanced-virtual-tour"
 
 interface EnhancedImageGalleryProps {
   images: string[]
@@ -88,6 +87,7 @@ export function EnhancedImageGallery({
                   const target = e.target as HTMLImageElement
                   target.src = "/placeholder.svg?height=400&width=600&text=Car+Image"
                 }}
+                priority={true}
               />
 
               {/* Image Counter */}
@@ -156,12 +156,6 @@ export function EnhancedImageGallery({
               </div>
             )}
           </div>
-        </TabsContent>
-
-        <TabsContent value="360tour" className="mt-6">
-          {images360.length > 0 && (
-            <EnhancedVirtualTour carName={carName} images360={images360} interiorImages={interiorImages360} />
-          )}
         </TabsContent>
       </Tabs>
 

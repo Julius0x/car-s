@@ -338,6 +338,7 @@ export function ImageGallery({ images, carName }: ImageGalleryProps) {
                 height={800}
                 className="object-contain max-w-[90vw] max-h-[90vh] select-none"
                 fallbackText="Car Image"
+                priority={true}
               />
             </div>
 

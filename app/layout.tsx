@@ -9,12 +9,12 @@ import { Footer } from "@/components/layout/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dryve - Buy & Sell Cars Online Philippines",
-  description: "Find your perfect pre-owned vehicle or sell your car on the Philippines' leading car marketplace",
+  title: "Dryve PH - It’s Easy.Just Dryve!",
+  description: "Dryve is an online car trading platform for secondhand vehicles. Sell used cars for a high offer or buy used cars for great deal!",
   keywords: "cars, buy cars, sell cars, used cars, pre-owned vehicles, Philippines, Dryve",
   openGraph: {
-    title: "Dryve - Buy & Sell Cars Online Philippines",
-    description: "Find your perfect pre-owned vehicle or sell your car on the Philippines' leading car marketplace",
+    title: "Dryve PH - It’s Easy.Just Dryve!",
+    description: "Dryve is an online car trading platform for secondhand vehicles. Sell used cars for a high offer or buy used cars for great deal!",
     type: "website",
   },
   icons: {

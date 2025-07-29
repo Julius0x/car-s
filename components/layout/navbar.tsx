@@ -21,7 +21,7 @@ export function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <Image className="w-16 h-16" src="/logo.png" alt="Dryve Logo" width={64} height={64} /> {/* Adjust width and height as needed */}
+              <Image className="w-20 h-20" src="/logo.png" alt="Dryve Logo" width={80} height={80} />
             </Link>
 
             {/* Desktop Navigation */}

@@ -6,12 +6,12 @@ export function Footer() {
     <footer className="border-t bg-background">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
+          <div>
             <Link href="/" className="flex items-center space-x-2">
-              <Image className="w-16 h-16" src="/logo.png" alt="Dryve Logo" width={64} height={64} /> {/* Adjust width and height as needed */}
+              <Image className="w-20 h-20" src="/logo.png" alt="Dryve Logo" width={20} height={20} />
             </Link>
             <p className="text-sm text-muted-foreground">
-              The Philippines' most trusted pre-owned vehicle marketplace. It's Easy. Just Dryve!
+            Dryve, is an automated car digital marketplace that seeks to offer Filipino drivers a platform for an easy end-to-end service solution while also ensuring that they’d get the best value for and from their vehicles. That’s who we are, we are made with YOU in mind. With Dryve, we aim to give you the best route possible by eliminating all roadblocks in the pre-owned vehicle ownership journey.
             </p>
           </div>
 
